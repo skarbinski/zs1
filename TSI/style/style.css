@@ -1,0 +1,28 @@
+body {
+    height: 800px;
+    width: 1000px;
+    background-color: rgba(255, 0, 0, 0.59)
+}
+#baner {
+    height: 40%;
+    background-color: red;
+
+}
+#menu {
+    background-color: aqua;
+    height: 60%;
+    width: 40%;
+    float: left;
+}
+#tresc {
+    background-color: yellowgreen;
+    height: 60%;
+    width: 60%;
+    float: left;
+}
+#stopka {
+    background-color: white;
+    height: 10%;
+    width: 100%;
+    float: left;
+}
