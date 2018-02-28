@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularze</title>
+    <link rel="stylesheet" href="style/form.css">
+</head>
+<body><!--
+   action, type, name - atrybt
+   tekst, get ,post - wartość
+   -->
+    <form action="szymon.html" method="get" id="form1">
+       <fieldset>
+           <legend>Dane: </legend>
+            <input type="text" name="imie" size="20" maxlength="5" autofocus placeholder="Janusz"> Imię<br><br>
+
+            <input type="text" name="nazwisko" size="20" maxlength="10" placeholder="Kowal"> Nazwisko<br><br>
+
+            <input type="text" name="szkola" placeholder="ZS1" readonly size="3" id="szkola"> Szkoła<br><br>
+
+            <input type="password" name="haslo" id="haslo" maxlength="20"> Hasło<br><br>
+
+            <input type="reset">
+            <input type="submit" id="przycisk" value="Zatwierdź">
+
+         </fieldset>
+   </form>
+   <hr>
+
+   <form id="form2" action="sandra.php">
+       <h3>Wybierz kolor</h3>
+        <input type="radio" name="kolor" value="biały"> Biały
+        <input type="radio" name="kolor" value="zielony"> Zielony
+        <input type="radio" name="kolor" value="czerwony" checked> Czerwony
+       <input type="submit" name="przycisk2">
+
+   </form>
+    <hr>
+
+
+    <form id="form3" action="artur.php">
+       <fieldset>
+           <legend>Wybierz imię: </legend>
+           <input type="radio" name="imie" value="Julia"> Julia <br>
+           <input type="radio" name="imie" value="Wiktoria"> Wiktoria <br>
+           <input type="radio" name="imie" value="Grażyna"> Grażyna <br>
+           <input type="radio" name="imie" value="Janusz" checked> Janusz <br>
+           <input type="submit" name="przycisk3" value="Wyślij imię">
+
+       </fieldset>
+    </form>
+    <hr>
+
+    <form>
+        <input type="checkbox" value="rower" name="pojazd1">Mam rower <br>
+        <input type="checkbox" value="samochod" name="pojazd2">Mam samochód <br>
+        <input type="checkbox" value="samolot" name="pojazd3">Mam samolot <br>
+        <input type="submit" name="przycisk4">
+    </form>
+    <hr>
+    <form>
+        <input type="color" name="color">
+        <input type="submit" name="przycisk5">
+    </form>
+    <hr>
+</body>
+</html>
