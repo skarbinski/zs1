@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Haslo</title>
+</head>
+<body>
+  <div id="k"></div>
+   <script>
+    var haslo = prompt('Podaj hasło');
+    var dlugosc = haslo.length;
+       var dl;
+    console.log(dlugosc);
+       if(dlugosc <= 0 ){
+           dl = 'błędne';
+       }else if (dlugosc >= 1 && dlugosc <=4){
+           dl = 'krotkie'
+       }else if (dlugosc >=5 && dlugosc <=8){
+           dl = 'srednie'
+       }else if (dlugosc > 8){
+           dl = 'dlugie'
+       }
+       switch (dl){
+           case 'błędne':
+               k.style.color = 'red';
+               break;
+            case 'krotkie':
+               k.style.color = 'yellow';
+               break;
+            case 'srednie':
+               k.style.color = 'blue';
+               break;
+            case 'dlugie':
+               k.style.color = 'green';
+               break;
+       }
+
+       k.innerHTML = 'Twoje hasło jest '+ dl;
+
+    </script>
+</body>
+</html>
